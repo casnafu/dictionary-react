@@ -1,11 +1,20 @@
 import React, { useState } from "react";
+import Definition from "./Definition";
+import axios from "axios";
 
 function Search() {
     const [keyword, setKeyword] = useState(null);
+    const [definition, setDefinition] = useState(null);
+
+    function getResponse(response) {
+        setDefinition(response.data[0]);
+    }
 
     function trackSearch(event) {
         event.preventDefault();
-        console.log(keyword)
+        const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
+
+        axios.get(url).then(getResponse);
     }
 
     function trackKeyword(event) {
@@ -23,6 +32,7 @@ function Search() {
                     onChange={trackKeyword}
                 />
             </form>
+            <Definition data={definition} />
         </div>
     )
 }
