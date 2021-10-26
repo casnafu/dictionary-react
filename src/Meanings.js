@@ -2,17 +2,13 @@ import React from "react";
 
 export default function Meanings(props) {
     return (
-        <div className="Meanings">
+        <div className="Meanings my-4">
             <h2>{props.data.partOfSpeech}</h2>
             {props.data.definitions.map((definitions, index) => {
                 return (
                     <div key={index}>
-                        <span>{definitions.definition}</span>
-                        <hr />
-                        <br />
-                        <span><em>{definitions.example}</em></span>
-                        <hr />
-                        <br />
+                        <span><p className="mb-2">{definitions.definition}</p></span>
+                        <span><p className="mb-2">Example: <em>{definitions.example}</em></p></span>
                     </div>
                 )
             })}
