@@ -6,21 +6,25 @@ export default function Definition(props) {
     if (props.data) {
         return (
             <div className="Definition">
-                <h1>{props.data.word}</h1>
-                {props.data.phonetics.map((phonetic, index) => {
-                    return (
-                        <div key={index}>
-                            <Phonetics data={phonetic} />
-                        </div>
-                    )
-                })}
-                {props.data.meanings.map((meaning, index) => {
-                    return (
-                        <div key={index}>
-                            <Meanings data={meaning} />
-                        </div>
-                    )
-                })}
+                <div className="d-flex flex-row justify-content-center border-bottom py-2">
+                    <h1>{props.data.word}</h1>
+                    {props.data.phonetics.map((phonetic, index) => {
+                        return (
+                            <div key={index} className="Phonetics p-3">
+                                <Phonetics data={phonetic} />
+                            </div>
+                        )
+                    })}
+                </div>
+                <div>
+                    {props.data.meanings.map((meaning, index) => {
+                        return (
+                            <div key={index} className="Meanings">
+                                <Meanings data={meaning} />
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         )
     } else {

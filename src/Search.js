@@ -25,7 +25,7 @@ function Search() {
         <div className="Search">
             <form className="container-fluid" onSubmit={trackSearch}>
                 <input
-                    className="form-control search-input p-3 my-4"
+                    className="form-control search-input rounded-pill p-3 my-4"
                     placeholder="Try somenthing like... your favorite thing"
                     type="search"
                     autoFocus="on"
