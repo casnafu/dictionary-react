@@ -21,3 +21,5 @@ export default function Photos(props) {
         return null;
     }
 }
+
+// documentation: https://www.pexels.com/api/ //

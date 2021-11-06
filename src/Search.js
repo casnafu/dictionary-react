@@ -73,3 +73,5 @@ function Search() {
 
 
 export default Search;
+
+// documentation: https://dictionaryapi.dev/ //
