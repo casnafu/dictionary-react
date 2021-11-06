@@ -6,7 +6,7 @@ export default function Synonyms(props) {
             <ul className="Synonyms list-inline">
                 {props.data.map((synonym, index) => {
                     return (
-                        <li key={index} className="list-inline-item">{synonym}</li>
+                        <li key={index} className="list-inline-item bg-warning bg-opacity-10 my-1">{synonym}</li>
                     )
                 })}
             </ul>

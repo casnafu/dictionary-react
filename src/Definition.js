@@ -10,7 +10,7 @@ export default function Definition(props) {
                     <h1>{props.data.word}</h1>
                     {props.data.phonetics.map((phonetic, index) => {
                         return (
-                            <div key={index} className="Phonetics p-3">
+                            <div key={index} className="Phonetics p-2 p-lg-3">
                                 <Phonetics data={phonetic} />
                             </div>
                         )
@@ -19,7 +19,7 @@ export default function Definition(props) {
                 <div>
                     {props.data.meanings.map((meaning, index) => {
                         return (
-                            <div key={index} className="Meanings">
+                            <div key={index} className="Meanings my-1 p-2">
                                 <Meanings data={meaning} />
                             </div>
                         )

@@ -5,9 +5,9 @@ function App() {
   return (
     <div className="App">
       <header className="Header container">
-        <nav className="navbar navbar-light bg-light rounded-3">
+        <nav className="navbar navbar-light bg-tranparent rounded-3">
           <div className="container-fluid">
-            <a className="navbar-brand fs-1 text" href="/">Dictionary</a>
+            <a className="navbar-brand fs-1 text" href="/"><i className="fas fa-book-reader text-success"></i> Língua Dictionary</a>
           </div>
         </nav>
       </header>
