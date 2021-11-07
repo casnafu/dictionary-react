@@ -16,7 +16,7 @@ function App() {
           <Search />
         </div>
       </main>
-      <footer>
+      <footer className="text-center">
         Project created by <a href="https://camif-me.netlify.app" className="text-decoration-none" target="_blank" rel="noreferrer">Camilla Ferreira</a>
       </footer>
     </div>

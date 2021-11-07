@@ -4,6 +4,7 @@ export default function Photos(props) {
     if (props.data) {
         return (
             <div className="Photos bg-white border-white shadow-sm rounded-3 my-4 p-4">
+                <h4 className="m-2">Related images:</h4>
                 <div className="row">
                     {props.data.map((photo, index) => {
                         return (

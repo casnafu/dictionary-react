@@ -4,7 +4,7 @@ import Definition from "./Definition";
 import Photos from "./Photos";
 
 function Search() {
-    const [keyword, setKeyword] = useState("hello");
+    const [keyword, setKeyword] = useState("positivity");
     const [definition, setDefinition] = useState(null);
     const [photos, setPhotos] = useState(null);
     const [ready, setReady] = useState(false);
